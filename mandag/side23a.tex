@@ -1,58 +1,15 @@
 \begin{minipage}[t]{100mm}
 \vspace{3mm}
 
-\section*{Dagens sang}
-\begin{center}
-Vi bynne å vi stajsfolk
-
-vi sønge om vå skønne ø;
-
-en kigge øv’e marke,
-
-å øv’e skov å sø.
-
-E blombej det æ fyldt med blomme,
-
-å olt æ ve å ve’ så grønt.
-
-Vi gleje vås te’e somme.
-
-vo olting æ så køhnt.
-
-Vå ø æ som en kal’gå
-
-mæ blomme o væt efeltre,
-
-vo olting æ så dejle,
-
-ven langs e strand’ en ge.
-
-Vi juble – der æ it dæ tynge,
-
-å tej væranne om e hals.
-
-Vi sammel ge’ å synge
-
-som e bølle om våt Als.
-
-Et sproch, som ingen anne,
-
-så køhnt – å mæ så fin en klang;
-
-å olti’ æ vi manne
-
-som seje det mæ sang;
-
-e faul di sønge olti’ om e,
-
-e svane bøje fint e hals,
-
-å ingen stej i verden
-
-e sang æ som o Als.
-\end{center}
+\section*{Løsning af søndagens opgave}
+Den røde kontakt spiller ingen rolle i løsningen andet end at blive skiftet hvis en fange ønsker at undgå a skifte den grønne kontakt. Den røde kontakt udelades derfor i følgende beskrivelse af løsningen.
+ \\ \\
+Fange 1 har to variable: FørsteBesøg der starter som ``sand'', og AndresBesøg der starter som $0$. Når fange 1 besøge celle 0 foretages følgende: Hvis FørsteBesøg $=$ ``sand'', sættes FørsteBesøg $=$ ``falsk'', og hvis den grønne kontakt er slukket, tændes den. Hvis FørsteBesøg $=$ ``falsk'', betragtes den grønne kontakt: Hvis den grønne kontakt er slukket, tændes den og der lægges én til AndresBesøg, ellers gør fange 1 intet. Hvis AndresBesøg $=43$ i slutningen af besøget, ved fange 1 at alle har været igennem celle 0.
+ \\ \\
+Alle andre fanger har én variabel: AntalGrønne der starter som $0$. Når en sådan fange besøger celle 0 gøres følgende: Hvis den grønne kontakt er tændt, og AntalGrønne $<2$, så slukker fangen den grønne kontakt og lægger 1 til AntalGrønne, ellers gør fangen intet.
 
 \section*{Dagens sætning - Pizza Sætningen}
 Hvis en rund pizza bliver delt i $8, 12, 16, \dots$ slices ved fra et vilkårligt punkt på pizzaen at inddele den i slices med samme vinkel, så vil man, hvis man spiser hvert andet stykke rundt, have spist halvdelen af pizzaen.
+\\
 \includegraphics[width=\textwidth]{Pizzathm.png}
 \end{minipage}
