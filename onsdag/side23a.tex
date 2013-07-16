@@ -1,0 +1,18 @@
+\begin{minipage}[t]{100mm}
+\vspace{3mm}
+\section*{Dagens opgave}
+
+\section*{Løsning til gårdsdagens opgave}
+\subsection*{Løsning til 1. hatteopgave}
+Det er tilstrækkeligt med $k$ døre, hvor $k$ er antallet af farver. Dværgene tildeler på forhånd værdierne $1,\dotsc,k$ til de forskellige mulige farver. Antag at dværg $i$ får en hjelm af farve $a_i$ på hovedet. Enhver af dværgene summerer så værdierne for alle hjelmene han ser, og han regner cyklisk omkring $k$, sådan at $k=0$, $k+1=1$, $k+2=2$, osv.. Derefter går dværgene gennem døren med samme tal som den sum de hver især regnede sig frem til.
+
+Lad $S$ være den samlede sum for alle hjelme, $S=a_1+a_2+\dotsb+a_n$. Hjelmene som dværg nummer $i$ kan se, har så summen $S-a_i$ fordi han ikke kan se sin egen hjelm. Dværgen $i$ går derfor gennem dør $S-a_i$. To dværge $i$ og $j$ går derfor gennem samme dør hvis og kun hvis $S-a_i=S-a_j$. Dette er tilfældet netop når $a_i=a_j$, dvs. hvis dværg $i$ og $j$ har samme farve hjelm.
+
+\subsection*{Løsning til 2. hatteopgave}
+Lad $M$ være mængden af dværge i hallen, og lad $F$ være mængden af mulige farver. En fordeling af farvede hjelme er nu det samme som en funktion $f\colon M\to F$ der for enhver dværg $m\in M$ fortæller hvilken farve $f(m)$ som $m$'s hjelm har. Vi indfører nu en ækvivalensrelation mellem de mulige fordelinger: To fordelinger $f_1\colon M\to F$ og $f_2\colon M\to F$ er ækvivalente, skrevet $f_1\sim f_2$ hvis der kun er endeligt mange $m\in M$ hvor fordelingerne afviger $f_1(m)\neq f_2(m)$.
+En fordeling $f$ afviger ikke fra sig selv, så $f\sim f$ gælder altid. Per symmetri gælder $f\sim g$ hvis og kun hvis $g\sim f$. Hvis $f$ kun afviger endeligt mange steder fra $g$, og $g$ kun afviger endeligt mange steder fra $h$, så vil $f$ kun afvige endeligt mange steder fra $h$. Vi har altså som påstået en ækvivalensrelation.
+
+Dværgene vælger nu på forhånd en specifik fordeling fra hver ækvivalensklasse. Da der er uendeligt mange dværge, kræver dette valg at dværgene bruger udvalgsaksiomet.
+Herefter når dværgene får hjelme på -- kald den faktiske fordeling for $f$. Enhver dværg $m$ vil så være i stand til at se alle farver $f(m')$ for alle $m'\neq m$. Dværgene vil altså kende den faktiske fordeling bortset fra sin egen hjelm, og da dette er en endelig fejl, vil dværgene være i stand til at bestemme ækvivalens $f$. Lad $f_0$ være den entydige fordeling som dværgene valgte på forhånd fra ækvivalensklassen med $f$. Enhver dværg $m\in M$ gætter så på farven $f_0(m)$, så dværgenes samlede gæt er fordelingen $f_0$. Idet vi har $f_0\sim f$, afviger den gættede fordeling $f_0$ kun endeligt mange steder fra den virkelige fordeling $f$.
+
+\end{minipage}
