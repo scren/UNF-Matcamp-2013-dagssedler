@@ -1,0 +1,36 @@
+\input{head.tex}
+
+\begin{minipage}[b]{0.95\linewidth}
+\begin{minipage}[t]{0.47\textwidth}
+\vspace{3mm}
+X
+\end{minipage}
+\hfill\begin{minipage}[t]{0.47\textwidth}
+
+\vspace{1mm}
+\tikzstyle{mybox} = [draw=white, fill=blue!20, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+\tikzstyle{fancytitle} =[fill=red, text=white]
+
+\begin{tikzpicture}
+\node [mybox] (box){%
+\begin{minipage}{0.80\textwidth}
+\vspace{-4mm}\section*{Dagens program}
+\begin{tabular}{ll}
+08:00-09:00 & Morgenmad \\
+09:00-12:00 & Undervisning: Diff / Diskret \\
+12:00-13:00 & Frokost \\
+13:00-15:00 & Gæsteforelæser HH \\
+15:00-16:30 & Erhvervsmesse \\
+16:30-17:30 & Middag \\
+17:30-22:00 & Ud af huset
+\end{tabular}
+\vspace{-4mm}
+\end{minipage}
+};
+\end{tikzpicture}%
+
+X
+
+\end{minipage}
+\end{minipage}
